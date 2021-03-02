@@ -1,6 +1,20 @@
 import turtle
 import random
+#remove from here...... 
+import tkinter
+import _tkinter
 
+HEIGHT = 700
+WIDTH = 800
+
+root = tkinter.Tk()
+root.title("Turtle Screen")
+
+canvas = tkinter.Canvas(root, height = HEIGHT, width=WIDTH)
+canvas.pack()
+
+root.mainloop()
+# .....till here for windows and then run
 
 wn = turtle.Screen()
 xd = turtle.Turtle()
@@ -21,6 +35,8 @@ while x<400:
     xd.forward(5+x)
     xd.right(90.99)
     x=x+1
+
+turtle.Screen().exitonclick()
     
     
 
